@@ -1,0 +1,156 @@
+.project h1{
+    color:rgb(233, 73, 73);
+    filter: drop-shadow(5px 4px 0px rgb(250, 202, 200));
+    text-align: center;
+    font-size: 6vh;
+}
+h2{
+    text-align: center;
+}
+.projectlist{
+    background-color: #fff;
+    padding: 1px 2vh;
+
+}
+.projectpic{
+    height: 50%;
+    width: 40%;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 2cqmin;
+}
+.projectpic:hover{
+    animation: zoom 2s forwards;
+}
+@keyframes zoom{
+    100%{
+        transform: rotate(0deg);
+        height: 55%;
+        width: 43%;
+    }
+}
+.eachproject{
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 8vh 0;
+    border: 1px solid rgb(3, 3, 3);
+    border-radius: 2vh;
+    padding: 2vh;
+}
+.desc li{
+    list-style: none;
+    margin: 0vh;
+    font-size: 2.5vh;
+    text-align: justify;
+}
+.desc{
+    width: 50%;
+}
+.desc li a{
+    display: flex;
+    justify-content: center;
+}
+.desc li a img:hover{
+    border:1px solid black;
+    border-radius: 50%;
+    padding:2px;
+}
+@media(min-width:768px) and (max-width:1024px) and (orientation:landscape){
+    .projectlist{
+        margin-left: 5%;
+    }
+
+}
+@media(min-width:768px) and (max-width:1024px) and (orientation:portrait){
+    .project{
+        width:85vw;
+        
+    }
+    .projectlist{
+        width: 60vw;
+        margin-left: 15vw;
+    }
+    .project h1{
+        font-size: 3vh;
+    }
+    .eachproject{
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        margin-left:0;
+        margin-top: 0;
+    }
+    .projectpic{
+        height: 40%;
+        width: 65%;
+        margin-left: 10vw;
+    }
+    .desc{
+        width: 60vw;
+        
+        
+    }
+    .desc li{
+        font-size: 2vh;
+        text-align: justify;
+    }
+    .projectpic:hover{
+        animation:none;
+    }
+}
+@media(min-width:100px) and (max-width:940px) and (orientation:landscape){
+    .project h1{
+        font-size: 10vh;
+    }
+    .projectpic{
+        height: 50%;
+        width: 45%;
+        margin:6% 2%;
+    }
+    .desc li{
+        font-size: 5vh;
+        text-align: justify;
+    }
+
+}
+@media(min-width:100px) and (max-width:440px) and (orientation:portrait){
+    .project{
+        width:85vw;
+        
+    }
+    .projectlist{
+        width: 84vw;
+        margin:0vh;
+        padding: 0;
+    }
+    .project h1{
+        font-size: 4vh;
+    }
+    .eachproject{
+        display: flex;
+        flex-direction: column;
+        width: 83vw;
+        padding: 2vw;
+    }
+    .projectpic{
+        height: auto;
+        width: 83vw;
+    }
+    .desc{
+        width: 83vw;
+    }
+    .desc li{
+        font-size: 2vh;
+        text-align: justify;
+    }
+    .projectpic:hover{
+        animation:none;
+    }
+    .desc li a{
+        display: flex;
+        justify-content: center;
+    }
+    .desc ul{
+        padding: 4vw;
+    }
+}

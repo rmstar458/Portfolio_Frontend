@@ -1,0 +1,111 @@
+#head{
+    text-align: left;
+}
+#homedivmain{
+    margin:0 0;
+    display: flex;
+    justify-content: space-evenly;
+    color:rgb(0, 0, 0);
+    
+}
+#name{
+    font-size: 6vh;
+    color:rgb(233, 73, 73);;
+}
+
+.homediv{
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+#profilepic{
+    height: 80%;
+    width: 80%;
+    border: 5px solid white;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 10px rgba(236, 239, 236, 0.893));
+    
+}
+.picclass{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.Links{
+  
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 3vh;
+    margin-bottom: 10%;
+    
+}
+.Links a{
+    padding: 0vh 2vh;
+}
+
+.Links img{
+    height: auto;
+    width: 5vh;
+    transition: width 0.3s step-start;
+}
+#Resume{
+    border: 1px solid black;
+    background-color: rgb(233, 73, 73);
+    display: inline;
+    padding: 1vh;
+    margin-top: 5%;
+}
+#Resume:hover{
+    background-color: #fff;
+    color:rgb(233, 73, 73);
+    border-color: rgb(233, 73, 73);
+}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait){
+    .picclass{
+        display: none;
+    }
+    #homedivmain{
+        width: 85vw;
+       
+    }
+}
+@media(min-width:100px) and (max-width:940px) and (orientation:landscape){
+    #profilepic{
+        height: 30vw;
+        width: 30vw;
+    }
+    #name{
+        font-size: 10vh;
+    }
+    .homediv{
+        margin-top: 3%;
+    }
+    .Links img{
+        height: auto;
+        width: 12vh;
+        
+    }
+    .Links{
+        padding: 0 6%;
+    }
+    .eachprofile{
+        padding: 0 8%;
+    }
+    #Resume{
+        padding: 3vh;
+    }
+}
+@media(min-width:100px) and (max-width:440px) and (orientation:portrait){
+    .picclass{
+        display: none;
+    }
+    #homedivmain{
+        margin-left: 0;
+      
+    }
+    .homediv{
+        margin-top: 10vh;
+        margin-left: 0;
+    }
+}
