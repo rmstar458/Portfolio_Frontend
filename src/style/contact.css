@@ -1,171 +1,59 @@
+.contact-main{
+    border: 1px solid black;
+    border-radius: 20px;
+   padding: 1%;
+    margin: 0 20%;
+    margin-bottom: 8vh;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.contact-main:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
 .contact-main h1{
     text-align: center;
-    color:rgb(233, 73, 73);
-    filter: drop-shadow(5px 4px 0px rgb(250, 202, 200));
-    font-size: 6vh;
 }
-.contact{
-    background: linear-gradient(to right bottom,rgb(246, 151, 151),rgb(240, 62, 62));
+.img-container{
+    margin:0 25%;
     display: flex;
-    flex-wrap: wrap;
-    margin:1%;
-    margin-bottom: 4%;
-    padding: 1% 0;
-    border-radius: 15px;
+    justify-content: space-evenly;
 }
-.contact-form{
-    display: flex;
-    flex-wrap: wrap;
+.img-container img{
+    height: auto;
+    width: 3vw;
+    filter: grayscale(100%);
 }
-.details{
-    display: flex;
-    flex-direction: column;
-    margin: 1% 3%;
-}
-.contact .contact-form .details input{
-    width: 20vw;
-    padding: 2%;
-    margin: 4% 0%;
-}
-.form-message textarea{
-    width: 60vw;
-    max-width: 100vw;
-    padding: 2%;
-    margin-left: 2%;
-    margin-bottom: 4%;
-
-}
-.form-message{
-    display: flex;
-    flex-direction: row;
-    margin: 1% 3%;
-}
-.button-div{
-    width: 75vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-#form-button{
-    font-size: large;
-    font-weight: bold;
-    width: 15vh;
-    padding:1%;
-    border-radius: 10px;
-
+.img-container img:hover{
+    filter: grayscale(0%);
 }
 @media(min-width:768px) and (max-width:1024px) and (orientation:portrait){
     .contact-main{
-        width: 60vw;
-        margin-left: 15vw;
-        margin-bottom: 5vh;
+        margin:0 3% 5% 20%;
     }
-    .details{
-        display: flex;
-        flex-direction: row;
-        width: 40vw;
-    }
-    .contact{
-        width: 60vw;
-        margin-left: 5vw;
-    }
-    .contact-form{
-        width: 55vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .contact-main h1{
-        font-size: 3vh;
-    }
-    .contact .contact-form .details input{
-        width: 25vw;
-    }
-    .contact .contact-form .details label{
-        margin:5% 3%;
-    }
-    .form-message{
-        width: 40vw;
-    }
-    .form-message label{
-        margin: 5% 3%;
-    }
-    .form-message textarea{
-        width: 25vw;
-        height: 10vh;
-        padding: 2%;
-        margin:5% 3%;
-    }
-    .button-div{
-        width: 45vw;
-        margin-bottom: 1vh;
+    .img-container img{
+        height: auto;
+        width: 5vw;
     }
 }
 @media(min-width:100px) and (max-width:940px) and (orientation:landscape){
-    .button-div{
-        width: 90vw;
-        margin-bottom: 1vh;
+    .contact-main{
+        margin:0 6% 5% 6%;
+        
     }
-    #form-button{
-        width: 20vw;
+    .img-container img{
+        height: auto;
+        width: 5vw;
     }
 }
 @media(min-width:100px) and (max-width:440px) and (orientation:portrait){
     .contact-main{
-        width: 85vw;
-        margin-left: 0vw;
-        margin-bottom: 5vh;
+        margin:0 7% 10% 0;
+    }
+    .img-container img{
+        height: auto;
+        width: 10vw;
     }
     .contact-main h1{
-        font-size: 4vh;
+        text-align: center;
+        font-size: large;
     }
-    
-    .contact{
-        width: 85vw;
-    }
-    .contact-form{
-        width: 85vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .details{
-        display: flex;
-        flex-direction: row;
-        width: 85vw;
-    }
-    .contact .contact-form .details input{
-        border-radius: 7px;
-        width: 50vw;
-    }
-    .contact .contact-form .details label{
-        margin:5% 2%;
-    }
-    .form-message{
-        width: 85vw;
-    }
-    .form-message label{
-        margin: 2%;
-    }
-    .form-message textarea{
-        width: 50vw;
-        height: 10vh;
-        padding: 2%;
-        margin:2%;
-    }
-    .button-div{
-        width: 45vw;
-        margin-bottom: 1vh;
-    }
-}
-
-
-
-
-
-.main{
-    color:rgb(198, 194, 192)
 }
